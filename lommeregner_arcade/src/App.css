@@ -1,0 +1,154 @@
+:root {
+  --back-sort: #232B2B;
+  --blå: #1c2841;
+
+  --hvid: #f0f0f0;
+
+  --pastelfarve1: #ffb3ba;
+  --pastelfarve2: #ffdfba;
+  --pastelfarve3: #ffffba;
+  --pastelfarve4: #baffc9;
+  --pastelfarve5: #bae1ff;
+
+} /*PINNED, background color */
+
+
+
+body {
+  margin: 0;
+  background: var(--back-sort);
+
+  color: var(--hvid);
+  font-family: sans-serif;
+}
+
+.calc-btn {
+  background: var(--pastelfarve5);
+}
+
+.calculator-window {
+  background: var(--blå);
+}
+
+
+
+
+.app-container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column; }
+
+.tab-bar {
+  display: flex;
+  background: var(--back-sort);
+
+  padding: 8px;
+  gap: 6px; }
+
+.tab {
+  padding: 8px 14px;
+  background: #2b3a67;
+  color: #ffffff
+}
+
+
+
+.tab.active { 
+  background: #3a4058; /*tab name*/
+
+}
+
+/*PINNED, color of tabs*/
+
+.add-tab {
+  margin-left: auto;
+  padding: 6px 12px;
+  background: #313b57; /*+ tab*/
+
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;  }
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.calculator-window {
+  background: var(--bg-tab);
+  border-radius: 10px;
+  padding: 10px;
+
+  position: relative;
+  resize: none;
+  overflow: hidden;
+  
+}
+
+
+.calculator-window {
+  background: #322f3ca3;
+} /*PINNED, background/case of the calculator */
+
+
+.resizer {
+  width: 16px;
+  height: 16px;
+  background: #888;
+  position: absolute;
+  right: 0;
+
+  bottom: 0;
+  cursor: se-resize;
+  
+}
+
+
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+
+.display {
+  height: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px; }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px; }
+
+
+                                                                                            
+.calc-btn {
+  background: white;
+  color: #222;
+  padding: 14px;
+
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  box-shadow:
+    0 4px 0 #404155,
+    0 6px 10px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.05s ease,
+    box-shadow 0.05s ease;
+
+} /*configurable buttons on .calc-btn*/
+/* default=#ccc,back White,#222 color, PINNED*/
